@@ -6,4 +6,3 @@
 
 (defmacro add-action [type & body]
   `(defmethod dispatch ~type ~(vector 'action) ~@body))
-
